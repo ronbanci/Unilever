@@ -1,0 +1,28 @@
+<ROOT>
+  <Persona>
+    <PersonaID>1001</PersonaID>
+    <PersonaSourceTypeCD></PersonaSourceTypeCD>
+    <PersonaSourceID></PersonaSourceID>
+    <FirstName>Ron</FirstName>
+    <MiddleName></MiddleName>
+    <LastName>Banci</LastName>
+    <FullName>Ron Banci</FullName>
+    <StandardizedFirstName></StandardizedFirstName>
+    <StandardizedMiddleName></StandardizedMiddleName>
+    <StandardizedLastName></StandardizedLastName>
+    <OrganizationName></OrganizationName>
+    <BirthDt>09/11/1971 00:00:00:000</BirthDt>
+    <GenderTypeCD>M</GenderTypeCD>
+    <EthinicityTypeCD></EthinicityTypeCD>
+    <NationalityCD></NationalityCD>
+    <UserID></UserID>
+    <UserAccountStartDt>01/16/2016 00:00:00:000</UserAccountStartDt>
+    <UserAccountRoleCD></UserAccountRoleCD>
+    <Gender_Code/>
+    <MarketingPromramID></MarketingPromramID>
+    <CREATED_DATE_TIME>01/16/2017 20:12:12:000</CREATED_DATE_TIME>
+    <SOURCE>UI</SOURCE>
+    <MailingAddressDetails/>
+    <DigitalIdentificationDetails/>
+  </Persona>
+</ROOT>

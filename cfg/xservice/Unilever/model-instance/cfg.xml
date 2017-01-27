@@ -1,0 +1,5 @@
+<config>
+  <prop Key="Name">[Unilever]</prop>
+  <prop Key="ModelInstance">true</prop>
+  <prop Key="Base">Models</prop>
+</config>

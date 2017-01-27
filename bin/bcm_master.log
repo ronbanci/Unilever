@@ -1,0 +1,225 @@
+<html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:13:627</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:13:629</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:13:642</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:14:382</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:14:382</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:14:382</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:15:495</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:15:496</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:15:496</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:16:087</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:16:087</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 795632861</td> <td> 5948</td> <td> 01/26/2017 11:48:16:088</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1201386814</td> <td> </td> <td> 01/26/2017 11:54:39:911</td> <td> WorkerThread-3</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1201386814</td> <td> </td> <td> 01/26/2017 11:54:39:911</td> <td> WorkerThread-3</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1201386814</td> <td> </td> <td> 01/26/2017 11:54:39:911</td> <td> WorkerThread-3</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1666254705</td> <td> 5948</td> <td> 01/26/2017 11:54:59:436</td> <td> WorkerThread-3</td> <td> Debug</td> 
+    <td>
+%%%%%%%%%%%% Total elapsed time in execution of method getRecursiveChildNodes() is :01/26/2017 11:54:57:972 - 01/26/2017 11:54:59:435 = 1
+
+    </td><td><br></td><td><br></td>
+  </tr>
+
+  <tr> <td> 1024359413</td> <td> </td> <td> 01/26/2017 11:55:19:593</td> <td> WorkerThread-3</td> <td> Debug</td> 
+    <td>MISSED GET DOCUMENT
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1024359413</td> <td> 5948</td> <td> 01/26/2017 11:55:31:172</td> <td> WorkerThread-3</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1024359413</td> <td> 5948</td> <td> 01/26/2017 11:55:31:172</td> <td> WorkerThread-3</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:41:330</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:41:348</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:41:448</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:42:115</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:42:115</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:42:116</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:199</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:199</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:200</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:811</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:812</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 2009249847</td> <td> 5968</td> <td> 01/26/2017 12:11:43:812</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:225</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:227</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:245</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:882</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:882</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:19:883</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:030</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:031</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:031</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:616</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:616</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1834202363</td> <td> 5981</td> <td> 01/26/2017 12:52:21:616</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:260</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:262</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:280</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:905</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:906</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:43:906</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:017</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:018</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:018</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:620</td> <td> main</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:620</td> <td> main</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1788240981</td> <td> 5993</td> <td> 01/26/2017 13:06:45:620</td> <td> main</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1230872334</td> <td> </td> <td> 01/26/2017 13:12:28:706</td> <td> WorkerThread-4</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1230872334</td> <td> </td> <td> 01/26/2017 13:12:28:706</td> <td> WorkerThread-4</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1072078455</td> <td> </td> <td> 01/26/2017 13:56:35:308</td> <td> WorkerThread-4</td> <td> Debug</td> 
+    <td>Get Document Request with Authorization:
+    </td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1072078455</td> <td> </td> <td> 01/26/2017 13:56:35:308</td> <td> WorkerThread-4</td> <td> Debug</td> <td><br></td><td><br></td><td><br></td>
+  </tr>
+  <tr> <td> 1072078455</td> <td> </td> <td> 01/26/2017 13:56:35:308</td> <td> WorkerThread-4</td> <td> Debug</td> 
+    <td>NO_PATTERN_FOUND
+DOCUMENT_CONTEXT:
+    </td><td><br></td><td><br></td>
+  </tr>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DOCUMENTS>
+  <!--
+ 	 Copyright (c) 2009 by Teradata Corporation. 
+	 All Rights Reserved. 
+	 Teradata CONFIDENTIAL AND TRADE SECRET 
+ -->
+	<DEFINE_METHOD Name="SearchUNI_Persona"  Access="Public">
+		<RULE>
+			<ACTION>
+				<GET_DOC_SMART Name="UNI_Persona" ServiceName="BCM_MASTER" AssignToVar="thisReturn" ReturnRowCount="yes">
+				</GET_DOC_SMART>
+				<TO_DOCVAR AssignToVar="viewResults">
+				<root>
+				<TO_XML SelectList="$thisReturn/UNI_Persona"/>
+				</root>
+				</TO_DOCVAR>
+			</ACTION>
+		</RULE>
+	</DEFINE_METHOD>
+
+    <DEFINE_METHOD Name="GetCustomerDemographicsRequest"  Access="Public">
+	<API_DOC>
+		<INPUT>
+			<REQUEST Name="GetCustomerDemographicsRequest" Comment="This API returns  Customer list for given conditions">
+				<PersonaId Optional="true">string</PersonaId>
+				<FirstName Optional="true">string</FirstName>
+				<LastName Optional="true">string</LastName>
+			</REQUEST>			
+		</INPUT>
+        
+		<OUTPUT>
+			<ON_SUCCESS>
+				<RESPONSES Status="Success" OrderIndicator="true">
+					<Customer Repeatable="true" Any="true">
+						<PersonaId Optional="true">string</PersonaId>
+						<FirstName Optional="true">string</FirstName>
+						<LastName Optional="true">string</LastName>
+                        <FullName Optional="true">string</FullName>
+                        <BirthDt Optional="true">string</BirthDt>
+					</Customer>
+				</RESPONSES>
+			</ON_SUCCESS>
+		</OUTPUT>
+		</API_DOC>
+
+		<RULE>
+			<ACTION>
+				<GET_DOC_SMART Name="UNI_Persona" ServiceName="BCM_MASTER" AssignToVar="thisReturn" ReturnRowCount="yes">
+					<PersonaID Value="{text($thisParam/PersonaId)}"/>
+                    <FirstName Value="{text($thisParam/FirstName)}"/>
+                    <LastName Value="{text($thisParam/LastName)}"/>
+					<SELECT>
+						<PersonaID Alias="PersonaID"/>
+						<FirstName Alias="FirstName"/>
+						<LastName Alias="LastName"/>
+                        <FullName Alias="FullName"/>
+	                    <BirthDt Alias="BirthDt"/>
+					</SELECT>
+				</GET_DOC_SMART>
+				<TO_DOCVAR AssignToVar="viewResults">
+				<Customer>
+				<TO_XML SelectList="$thisReturn/UNI_Persona"/>
+				</Customer>
+				</TO_DOCVAR>
+			</ACTION>
+		</RULE>
+    </DEFINE_METHOD>
+ <DEFINE_METHOD Name="searchPersona"  Access="Public">
+    <API_DOC>
+      <INPUT>
+        <REQUEST Name="searchPersona" Comment="This API returns  Persona list for given conditions">
+          <PersonaID Optional="true">string</PersonaID>
+          <FirstName Optional="true">string</FirstName>
+          <LastName Optional="true">string</LastName>
+          
+        </REQUEST>
+      </INPUT>
+      <OUTPUT>
+        <ON_SUCCESS>
+          <RESPONSES Status="Success" OrderIndicator="true">
+            <Persona Repeatable="true" Any="true">
+              <PersonaID Optional="true">string</PersonaID>
+              <PersonaSourceTypeCD Optional="true">string</PersonaSourceTypeCD>
+              <PersonaSourceID Optional="true">string</PersonaSourceID>
+              <FirstName Optional="true">string</FirstName>
+              <MiddleName Optional="true">string</MiddleName>
+              <LastName Optional="true">string</LastName>
+              <FullName Optional="true">string</FullName>
+              <StandardizedFirstName Optional="true">string</StandardizedFirstName>
+              <StandardizedMiddleName Optional="true">string</StandardizedMiddleName>
+              <StandardizedLastName Optional="true">string</StandardizedLastName>
+              <OrganizationName Optional="true">string</OrganizationName>
+              <BirthDt Optional="true">string</BirthDt>
+              <GenderTypeCD Optional="true">string</GenderTypeCD>
+              <EthinicityTypeCD Optional="true">string</EthinicityTypeCD>
+              <NationalityCD Optional="true">string</NationalityCD>
+              <UserID Optional="true">string</UserID>
+              <UserAccountStartDt Optional="true">string</UserAccountStartDt>
+              <UserAccountRoleCD Optional="true">string</UserAccountRoleCD>
+              <MarketingPromramID Optional="true">string</MarketingPromramID>
+              <MailingAddressDetails Optional="false" OrderIndicator="true">
+                <MailingAddress Optional="true" Any="true">
+                  <PersonaID Optional="true">string</PersonaID>
+                  <AddressSequenceID Optional="true">string</AddressSequenceID>
+                  <AddressStandardizedTxt Optional="true">string</AddressStandardizedTxt>
+                  <AddressTypeCD Optional="true">string</AddressTypeCD>
+                  <AddressSubTypeCD Optional="true">string</AddressSubTypeCD>
+                  <ChannelID Optional="true">string</ChannelID>
+                  <CREATED_DATE_TIME Optional="true">01/01/2007 08:11:49:204[Type=datetime]</CREATED_DATE_TIME>
+                  <SOURCE Optional="true">string</SOURCE>
+                </MailingAddress>
+              </MailingAddressDetails>
+              <DigitalIdentificationDetails Optional="false" OrderIndicator="true">
+                <DigitalIdentification Optional="true" Any="true">
+                  <PersonaID Optional="true">string</PersonaID>
+                  <DigitalIdentificationTypeCD Optional="true">string</DigitalIdentificationTypeCD>
+                  <DigitalID Optional="true">string</DigitalID>
+                  <DigitalIdentificationSourceCD Optional="true">string</DigitalIdentificationSourceCD>
+                  <DigitalIdentificationStartDt Optional="true">string</DigitalIdentificationStartDt>
+                  <DigitalIdentificationEndDt Optional="true">string</DigitalIdentificationEndDt>
+                  <CREATED_DATE_TIME Optional="true">01/01/2007 08:11:49:204[Type=datetime]</CREATED_DATE_TIME>
+                  <SOURCE Optional="true">string</SOURCE>
+                </DigitalIdentification>
+              </DigitalIdentificationDetails>
+              <!--
+              <TelephoneAddressDetails Optional="false" OrderIndicator="true">
+                <TelephoneAddress Optional="true" Any="true">
+                  <PersonaID Optional="true">string</PersonaID>
+                  <TelephoneNum Optional="true">string</TelephoneNum>
+                  <CREATED_DATE_TIME Optional="true">01/01/2007 08:11:49:204[Type=datetime]</CREATED_DATE_TIME>
+                  <SOURCE Optional="true">string</SOURCE>
+                </TelephoneAddress>
+              </TelephoneAddressDetails>
+              -->
+            </Persona>
+          </RESPONSES>
+        </ON_SUCCESS>
+      </OUTPUT>
+    </API_DOC>
+    <RULE>
+      <ACTION>
+
+        <SET Var="_personaID" FromValue="{text($thisParam/PersonaID)}"/>
+        <TO_DOCVAR AssignToVar="tt1">
+          <A/>
+        </TO_DOCVAR>
+        <!--
+        <SET Var="_TelephoneNumber" FromValue="{text($thisParam/TelephoneNumber)}"/>
+        <IF_TEST Test="strlen($_TelephoneNumber) > 1">
+          <THEN>
+            <REQUEST Name="getPhoneNumByFormat" AssignToVar="resPhoneNumByFormat" ServiceName="BCM_MASTER" HandleException="true">
+              <TelephoneNumber Value="{$_TelephoneNumber}"/>
+            </REQUEST>
+            <SET Var="_TelephoneNumber" FromValue="{$resPhoneNumByFormat/TelephoneNumber/@Value}"/>
+          </THEN>
+        </IF_TEST>
+        -->
+        <IF_TEST Test="strlen($_personaID) &lt; 1">
+          <THEN>
+            <TO_DOCVAR AssignToVar="inputRequest">
+              <ROOT>
+                <PersonaID Value="{text($thisParam/PersonaID)}"/>
+                <FirstName Value="{text($thisParam/FirstName)}"/>
+                <LastName Value="{text($thisParam/LastName)}"/>
+                
+              </ROOT>
+            </TO_DOCVAR>
+            <SET Var="WildCard" FromValue="*"/>
+            <FORM_SEARCH_FILTER Value="{$inputRequest}" AssignToVar="mstFilters">
+              <PersonaID InputName="PersonaID"/>
+              <FirstName InputName="FirstName"/>
+              <LastName InputName="LastName"/>
+              
+            </FORM_SEARCH_FILTER>
+            <FOR_EACH SelectList="$mstFilters/FILTER" CurrentElement="thisFilter">
+              <SET Var="filterTag" FromSelect="$thisFilter/*"/>
+              <SET Var="tempTagName" FromValue="{$thisFilter/@Name}"/>
+              <SET Var="tempTagValue" FromValue="{$thisFilter/*[name()=$tempTagName]/@Value}"/>
+              <SET Attribute="Value" DocVar="filterTag" FromSelect="upperCase($tempTagValue)"/>
+              <SET Attribute="ScalarFn" DocVar="filterTag" FromValue="upperCase"/>
+              <APPEND_TO_XML SelectList="$tt1">
+                <TO_XML SelectList="$thisFilter/*"/>
+              </APPEND_TO_XML>
+            </FOR_EACH>
+          </THEN>
+          <ELSE>
+            <APPEND_TO_XML SelectList="$tt1">
+              <PersonaID Value="{text($thisParam/PersonaID)}"/>
+            </APPEND_TO_XML>
+          </ELSE>
+        </IF_TEST>
+        <TO_DOCVAR AssignToVar="personaTotalResults">
+          <ROOT/>
+        </TO_DOCVAR>
+        
+        
+        <GET_DOCUMENT Name="UNI_Persona" ServiceName="BCM_MASTER" AssignToVar="personaResults" DirtyRead="true" Distinct="false" ReturnRowCount="yes">
+          <TO_XML SelectList="$tt1/*"/>
+          <ENTITY_STATE Value="ACTIVE"/>
+          <SELECT>
+			<PersonaID Alias="PersonaID"/>
+            <PersonaSourceTypeCD Alias="PersonaSourceTypeCD"/>
+            <PersonaSourceID Alias="PersonaSourceID"/>
+			<FirstName Alias="FirstName"/>
+            <MiddleName Alias="MiddleName"/>
+			<LastName Alias="LastName"/>
+			<FullName Alias="FullName"/>
+            <StandardizedFirstName Alias="StandardizedFirstName"/>
+            <StandardizedMiddleName Alias="StandardizedMiddleName"/>
+            <StandardizedLastName Alias="StandardizedLastName"/>
+            <OrganizationName Alias="OrganizationName"/>  
+            <BirthDt Alias="BirthDt"/>
+            <GenderTypeCD Alias="GenderTypeCD"/>
+            <EthinicityTypeCD Alias="EthinicityTypeCD"/>
+            <NationalityCD Alias="NationalityCD"/>
+            <UserID Alias="UserID"/>
+            <UserAccountStartDt Alias="UserAccountStartDt"/>
+            <UserAccountRoleCD Alias="UserAccountRoleCD"/>
+            <MarketingPromramID Alias="MarketingPromramID"/>
+            <CREATION_DATE Alias="CREATED_DATE_TIME"/>
+            <SOURCE Alias="SOURCE_NAME"/>
+          </SELECT>
+        </GET_DOCUMENT>
+        <PRINT_TO_FILE File="personaResults.xml" NewFile="yes" Value="{$thisReturn}"/>
+        <IF_TEST Test="$personaResults/@TotalRowCount > 0 ">
+          <THEN>
+            <FOR_EACH SelectList="$personaResults/UNI_Persona" CurrentElement="currPersona">
+              <TO_DOCVAR AssignToVar="MainDetails">
+                <ROOT/>
+              </TO_DOCVAR>
+              <APPEND_TO_XML DocVar="MainDetails">
+                <Persona>
+                  <PersonaID>{$currPersona/PersonaID/@Value}</PersonaID>
+                  <PersonaSourceTypeCD>{$currPersona/PersonaSourceTypeCD/@Value}</PersonaSourceTypeCD>
+                  <PersonaSourceID>{$currPersona/PersonaSourceID/@Value}</PersonaSourceID>
+                  <FirstName>{$currPersona/FirstName/@Value}</FirstName>
+                  <MiddleName>{$currPersona/MiddleName/@Value}</MiddleName>
+                  <LastName>{$currPersona/LastName/@Value}</LastName>
+                  <FullName>{$currPersona/FullName/@Value}</FullName>
+                  <StandardizedFirstName>{$currPersona/StandardizedFirstName/@Value}</StandardizedFirstName>
+                  <StandardizedMiddleName>{$currPersona/StandardizedMiddleName/@Value}</StandardizedMiddleName>
+                  <StandardizedLastName>{$currPersona/StandardizedLastName/@Value}</StandardizedLastName>
+                  <OrganizationName>{$currPersona/OrganizationName/@Value}</OrganizationName>
+                  <BirthDt>{$currPersona/BirthDt/@Value}</BirthDt>
+                  <GenderTypeCD>{$currPersona/GenderTypeCD/@Value}</GenderTypeCD>
+                  <EthinicityTypeCD>{$currPersona/EthinicityTypeCD/@Value}</EthinicityTypeCD>
+                  <NationalityCD>{$currPersona/NationalityCD/@Value}</NationalityCD>
+                  <UserID>{$currPersona/UserID/@Value}</UserID>
+                  <UserAccountStartDt>{$currPersona/UserAccountStartDt/@Value}</UserAccountStartDt>
+                  <UserAccountRoleCD>{$currPersona/UserAccountRoleCD/@Value}</UserAccountRoleCD>
+                  <Gender_Code>{$currPersona/Gender_Code/@Value}</Gender_Code>
+                  <MarketingPromramID>{$currPersona/MarketingPromramID/@Value}</MarketingPromramID>
+                  <CREATED_DATE_TIME>{$currPersona/CREATED_DATE_TIME/@Value}</CREATED_DATE_TIME>
+                  <SOURCE>{$currPersona/SOURCE_NAME/@Value}</SOURCE>
+                </Persona>
+              </APPEND_TO_XML>
+              <GET_DOCUMENT Name="UNI_PersonaAddress" ServiceName="BCM_MASTER" AssignToVar="personaMailingResults" DirtyRead="true" Distinct="false">
+                <PersonaID Value="{$currPersona/PersonaID/@Value}"/>
+                <ENTITY_STATE Value="ACTIVE"/>
+                <SELECT>
+                  <PersonaID Alias="PersonaID"/>
+                  <AddressSequenceID Alias="AddressSequenceID"/>
+                  <AddressStandardizedTxt Alias="AddressStandardizedTxt"/>
+                  <AddressTypeCD Alias="AddressTypeCD"/>
+                  <AddressSubTypeCD Alias="AddressSubTypeCD"/>
+                  <ChannelID Alias="ChannelID"/>
+                  <CREATION_DATE Alias="CREATED_DATE_TIME"/>
+                  <SOURCE Alias="SOURCE_NAME"/>
+                </SELECT>
+              </GET_DOCUMENT>
+              <TO_DOCVAR AssignToVar="MailingDetails">
+                <A>
+                  <MailingAddressDetails/>
+                </A>
+              </TO_DOCVAR>
+              <FOR_EACH SelectList="$personaMailingResults/UNI_PersonaAddress" CurrentElement="currPersonaMailing">
+                <APPEND_TO_XML SelectList="$MailingDetails/MailingAddressDetails">
+                  <MailingAddress>
+                    <PersonaID>{$currPersonaMailing/PersonaID/@Value}</PersonaID>
+                    <AddressSequenceID>{$currPersonaMailing/AddressSequenceID/@Value}</AddressSequenceID>
+                    <AddressStandardizedTxt>{$currPersonaMailing/AddressStandardizedTxt/@Value}</AddressStandardizedTxt>
+                    <AddressTypeCD>{$currPersonaMailing/AddressTypeCD/@Value}</AddressTypeCD>
+                    <AddressSubTypeCD>{$currPersonaMailing/AddressSubTypeCD/@Value}</AddressSubTypeCD>
+                    <ChannelID>{$currPersonaMailing/ChannelID/@Value}</ChannelID>
+                    <CREATED_DATE_TIME>{$currPersonaMailing/CREATED_DATE_TIME/@Value}</CREATED_DATE_TIME>
+                    <SOURCE>{$currPersonaMailing/SOURCE_NAME/@Value}</SOURCE>
+                  </MailingAddress>
+                </APPEND_TO_XML>
+              </FOR_EACH>
+              <APPEND_TO_XML SelectList="$MainDetails/Persona">
+                <TO_XML SelectList="$MailingDetails/*"/>
+              </APPEND_TO_XML>
+              <GET_DOCUMENT Name="UNI_PersonaDigiId" ServiceName="BCM_MASTER" AssignToVar="personaDigiIdResults" DirtyRead="true" Distinct="false">
+				<PersonaID Value="{$currPersona/PersonaID/@Value}"/>
+				<ENTITY_STATE Value="ACTIVE"/>
+                <SELECT>
+					<PersonaID>{$currPersonaMailing/PersonaID/@Value}</PersonaID>
+					<DigitalIdentificationTypeCD>{$currPersonaMailing/DigitalIdentificationTypeCD/@Value}</DigitalIdentificationTypeCD>
+					<DigitalID>{$currPersonaMailing/DigitalID/@Value}</DigitalID>
+					<DigitalIdentificationSourceCD>{$currPersonaMailing/DigitalIdentificationSourceCD/@Value}</DigitalIdentificationSourceCD>
+					<DigitalIdentificationStartDt>{$currPersonaMailing/DigitalIdentificationStartDt/@Value}</DigitalIdentificationStartDt>
+					<DigitalIdentificationEndDt>{$currPersonaMailing/DigitalIdentificationEndDt/@Value}</DigitalIdentificationEndDt>
+                  <CREATION_DATE Alias="CREATED_DATE_TIME"/>
+                  <SOURCE Alias="SOURCE_NAME"/>
+                </SELECT>
+              </GET_DOCUMENT>
+              <TO_DOCVAR AssignToVar="DigitalIdentificationDetails">
+                <A>
+                  <DigitalIdentificationDetails/>
+                </A>
+              </TO_DOCVAR>
+              <FOR_EACH SelectList="$personaDigiIdResults/UNI_PersonaDigiId" CurrentElement="currPersonaDigiId">
+                <APPEND_TO_XML SelectList="$DigitalIdentificationDetails/DigitalIdentificationDetails">
+                  <DigitalIdentificationDetails>
+                    <PersonaID>{$currPersonaDigiId/PersonaID/@Value}</PersonaID>
+                    <DigitalIdentificationTypeCD>{$currPersonaDigiId/DigitalIdentificationTypeCD/@Value}</DigitalIdentificationTypeCD>
+                    <DigitalID>{$currPersonaDigiId/DigitalID/@Value}</DigitalID>
+                    <DigitalIdentificationSourceCD>{$currPersonaDigiId/DigitalIdentificationSourceCD/@Value}</DigitalIdentificationSourceCD>
+                    <DigitalIdentificationStartDt>{$currPersonaDigiId/DigitalIdentificationStartDt/@Value}</DigitalIdentificationStartDt>
+                    <DigitalIdentificationEndDt>{$currPersonaDigiId/DigitalIdentificationEndDt/@Value}</DigitalIdentificationEndDt>
+                    <CREATED_DATE_TIME>{$currPersonaDigiId/CREATED_DATE_TIME/@Value}</CREATED_DATE_TIME>
+                    <SOURCE>{$currPersonaDigiId/SOURCE_NAME/@Value}</SOURCE>
+                  </DigitalIdentificationDetails>
+                </APPEND_TO_XML>
+              </FOR_EACH>
+              <APPEND_TO_XML SelectList="$MainDetails/Persona">
+                <TO_XML SelectList="$DigitalIdentificationDetails/*"/>
+              </APPEND_TO_XML>
+              <!--
+              <TO_DOCVAR AssignToVar="TelephoneDetails">
+                <A>
+                  <TelephoneAddressDetails/>
+                </A>
+              </TO_DOCVAR>
+              <GET_DOCUMENT Name="PARTY_TELEPHONE_ADDRESS" ServiceName="BCM_MASTER" AssignToVar="customerTelephoneResults" DirtyRead="true" Distinct="false">
+                <PartyId Value="{$currPersona/PersonaID/@Value}"/>
+                <PartyTypeCd Value="I"/>
+                <SELECT>
+                  <PartyId Alias="PersonaID"/>
+                  <TelephoneNum Alias="TelephoneNum"/>
+                  <CREATION_DATE Alias="CREATED_DATE_TIME"/>
+                  <SOURCE Alias="SOURCE_NAME"/>
+                </SELECT>
+              </GET_DOCUMENT>
+              <FOR_EACH SelectList="$customerTelephoneResults/PARTY_TELEPHONE_ADDRESS" CurrentElement="currPersonaTelephone">
+                <APPEND_TO_XML SelectList="$TelephoneDetails/TelephoneAddressDetails">
+                  <TelephoneAddress>
+                    <PersonaID>{$currPersonaTelephone/PersonaID/@Value}</PersonaID>
+                    <TelephoneNum>{$currPersonaTelephone/TelephoneNum/@Value}</TelephoneNum>
+                    <CREATED_DATE_TIME>{$currPersonaTelephone/CREATED_DATE_TIME/@Value}</CREATED_DATE_TIME>
+                    <SOURCE>{$currPersonaTelephone/SOURCE_NAME/@Value}</SOURCE>
+                  </TelephoneAddress>
+                </APPEND_TO_XML>
+              </FOR_EACH>
+              <APPEND_TO_XML SelectList="$MainDetails/cust">
+                <TO_XML SelectList="$TelephoneDetails/*"/>
+              </APPEND_TO_XML>
+              -->
+              <APPEND_TO_XML SelectList="$PersonaTotalResults">
+                <TO_XML SelectList="$MainDetails/*"/>
+              </APPEND_TO_XML>
+              <PRINT_TO_FILE File="PersonaTotalResults.xml" NewFile="yes" Value="{$MainDetails}"/>
+            </FOR_EACH>
+           
+            <TO_DOCVAR AssignToVar="thisReturn">
+              <RESPONSE Status="Success" OrderIndicator="true" Comment="Success response of Search Persona API">
+<!--
+                <TO_XML SelectList="$PersonaTotalResults/*"/>
+-->            
+                <TO_XML SelectList="$MainDetails/*"/>
+              </RESPONSE>
+            </TO_DOCVAR>
+           
+            <!--
+            <IF_TEST Test="$personaResults/@TotalRowCount = 0 ">
+              <THEN>
+                <TO_DOCVAR AssignToVar="thisReturn">
+                  <RESPONSE Status="Success" OrderIndicator="true" Comment="Success response of Search Persona API">
+                    <Message Value="Persona not found in the System..."/>
+                  </RESPONSE>
+                </TO_DOCVAR>
+              </THEN>
+              <ELSE>
+	              <TO_DOCVAR AssignToVar="thisReturn">
+					<RESPONSE Status="Success" OrderIndicator="true" Comment="Success response of Search Persona API">
+					<TO_XML SelectList="$MainDetails/*"/>
+					</RESPONSE>
+	              </TO_DOCVAR>
+              </ELSE>
+            </IF_TEST>
+            -->
+            <!--
+            <APPEND_TO_XML DocVar="thisReturn">
+              <TO_XML SelectList="$PersonaTotalResults/*"/>
+              
+            </APPEND_TO_XML>
+            -->
+            
+          </THEN>
+          <ELSE>
+				<TO_DOCVAR AssignToVar="thisReturn">
+				<RESPONSE Status="Success" OrderIndicator="true" Comment="Success response of Search Persona API">
+				<Message Value="Persona not found in the System..."/>
+				</RESPONSE>
+				</TO_DOCVAR>
+          </ELSE>
+          
+        </IF_TEST>
+      </ACTION>
+    </RULE>
+  </DEFINE_METHOD>
+  
+    
+</DOCUMENTS>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dom-config>
+  <service-config Name="Unilever_MASTER" TransactionCache="false" Register="false">
+    <register-handlers>
+      <handler TagName="MDM" ClassName="com.teradata.bcm.xcore.tool.MDMPreInitHandler"/>
+      <handler TagName="dataPersistSpec" ClassName="com.teradata.bcm.xcore.datapersist.DataPersistConfigSpecHandler"/>
+      <handler TagName="validationSpecFiles" ClassName="com.teradata.xservice.validation.ValidationSpecsHandler"/>
+      <handler TagName="idgen" ClassName="com.teradata.xcore.idgen.IdGenConfigHandler"/>
+      <handler TagName="workflow" ClassName="com.teradata.xcore.workflow.WorkflowConfigHandler"/>
+    </register-handlers>
+    <MDM/>
+    <dataPersistSpec>
+      <dataPersistSpecFile Name="com/teradata/bcm/xcore/serverutil/xml/DefaultDocPersistConfig.xml"/>
+    </dataPersistSpec>
+    <extensionFiles>
+      <extensionFile Name="com/teradata/bcm/xcore/serverutil/xml/bcm_rule_extension.xml"/>
+    </extensionFiles>
+    <docDefnFiles>
+      <docDefnFile Name="xservice/Unilever/documents/mst_xdoc.xml"/>
+      <docDefnFile Name="xservice/Unilever/documents/err_xdoc.xml"/>
+    </docDefnFiles>
+    <ruleDefnFiles>
+      <ruleDefnFile Name="com/teradata/bcm/xcore/serverutil/xml/forms_rule.xml"/>
+      <ruleDefnFile Name="com/teradata/bcm/xcore/serverutil/xml/bcm_xrule.xml"/>
+      <ruleDefnFile Name="xservice/toolkit/rules/tk_bcmmasterRule.xml"/>
+      <ruleDefnFile Name="xservice/Unilever/rules/tk_dataSourceValidationAPI.xml"/>
+      <ruleDefnFile Name="xservice/Unilever/rules/default_ws_rules.xml"/>
+      <ruleDefnFile Name="xservice/Unilever/rules/CDINextGenRules.xml"/>
+    </ruleDefnFiles>
+    <validationSpecFiles>
+      <validationSpecFile Name="xservice/Unilever/validations/mst_validation.xml"/>
+    </validationSpecFiles>
+    <logger>
+      <file Name="../log/Unilever_master.log"/>
+      <logLevels>
+        <logLevel Value="Exception"/>
+        <logLevel Value="Error"/>
+      </logLevels>
+      <brief-console Value="false"/>
+    </logger>
+    <idgen>
+      <document Name="SystemProperties" prefix="SYS" delimiter="-" sequenceName="SYS_SEQ" handler="com.teradata.xcore.idgen.BlockTableIdGenerator" blockSize="100"/>
+    </idgen>
+    <service-params>
+      <param Value="NO" Name="isCacheEnabled"/>
+      <param Value="false" Name="PartitionRequired"/>
+      <param Value="YES" Name="isDataAuthorizationEnabled"/>
+      <param Value="YES" Name="DataSourceValidationEnabled"/>
+      <param Value="1000" Name="DEFAULT_MAX_ROWS_FETCH"/>
+    </service-params>
+    <schemaGenerate Value="true">
+      <file Value="../db/Unilever_master.sql"/>
+      <generateTables Value="true"/>
+      <viewSqlDir Value="xservice/Unilever/viewsql"/>
+      <dbname Value="MDM_UNI_MST"/>
+      <maxTableNameLength Value="30"/>
+      <maxColumnNameLength Value="30"/>
+    </schemaGenerate>
+    <dd-instance Value="../../xservice/Unilever/model-instance"/>
+    <workflow>
+      <workflowDefnFiles/>
+      <uiWorkflowDefnFiles/>
+    </workflow>
+    <eventDefnFiles/>
+    <statetransition>
+      <stateTransitionFiles/>
+      <stateMappingFiles/>
+    </statetransition>
+    <messaging>
+      <messageTemplateFiles/>
+      <messageRecipientGroupFiles/>
+      <messagingEventDefFiles/>
+      <messagingEventFiles/>
+    </messaging>
+  </service-config>
+</dom-config>

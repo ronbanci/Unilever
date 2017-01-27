@@ -1,0 +1,2683 @@
+<DOCUMENTS>
+  <!--[Unilever]::Unilever/models/Customer/Address.mtt-->
+  <DEFINE_DOCUMENT Name="Address" TableName="VER_ADDRESS" TempTable="GT_ADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Customer/Address.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Address_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/AttributeSet.mtt-->
+  <DEFINE_DOCUMENT Name="AttributeSet" TableName="VER_ATTRIBUTESET" TempTable="GT_ATTRIBUTESET" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/AttributeSet.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="AttributeSet_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/AttributeSetDetail.mtt-->
+  <DEFINE_DOCUMENT Name="AttributeSetDetail" TableName="VER_ATTRIBUTESETDETAIL" TempTable="GT_ATTRIBUTESETDETAIL" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/AttributeSetDetail.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="AttributeSetDet_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/ClassificationErrorMap.mtt-->
+  <DEFINE_DOCUMENT Name="ClassificationErrorMap" TableName="VER_CLASSIFICATIONERRORMAP" TempTable="GT_CLASSIFICATIONERRORMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/ClassificationErrorMap.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="ClassificationE_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set.mtt-->
+  <DEFINE_DOCUMENT Name="Code_Set" TableName="VER_CODE_SET" TempTable="GT_CODE_SET" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Code_Set_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set_Stats.mtt-->
+  <DEFINE_DOCUMENT Name="Code_Set_Stats" TableName="VER_CODE_SET_STATS" TempTable="GT_CODE_SET_STATS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set_Stats.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Code_Set_Stats_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/CrossRefRelation.mtt-->
+  <DEFINE_DOCUMENT Name="CrossRefRelation" TableName="VER_CROSSREFRELATION" TempTable="GT_CROSSREFRELATION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/CrossRefRelation.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="CrossRefRelatio_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/CrossReference.mtt-->
+  <DEFINE_DOCUMENT Name="CrossReference" TableName="VER_CROSSREFERENCE" TempTable="GT_CROSSREFERENCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/CrossReference.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="CrossReference_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Custom_Code_Set_Clm.mtt-->
+  <DEFINE_DOCUMENT Name="Custom_Code_Set_Clm" TableName="VER_CUSTOM_CODE_SET_CLM" TempTable="GT_CUSTOM_CODE_SET_CLM" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Custom_Code_Set_Clm.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Custom_Code_Set_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/Customer.mtt-->
+  <DEFINE_DOCUMENT Name="Customer" TableName="VER_CUSTOMER" TempTable="GT_CUSTOMER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Customer/Customer.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Customer_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/CustomerAddress.mtt-->
+  <DEFINE_DOCUMENT Name="CustomerAddress" TableName="VER_CUSTOMERADDRESS" TempTable="GT_CUSTOMERADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Customer/CustomerAddress.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="CustomerAddress_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Domain.mtt-->
+  <DEFINE_DOCUMENT Name="Domain" TableName="VER_DOMAIN" TempTable="GT_DOMAIN" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Domain.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Domain_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/ElectronicAddress.mtt-->
+  <DEFINE_DOCUMENT Name="ElectronicAddress" TableName="VER_ELECTRONICADDRESS" TempTable="GT_ELECTRONICADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Customer/ElectronicAddress.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="ElectronicAddre_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/EntityClassification.mtt-->
+  <DEFINE_DOCUMENT Name="EntityClassification" TableName="VER_ENTITYCLASSIFICATION" TempTable="GT_ENTITYCLASSIFICATION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/EntityClassification.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="EntityClassific_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityObject.mtt-->
+  <DEFINE_DOCUMENT Name="EntityObject" TableName="VER_ENTITYOBJECT" TempTable="GT_ENTITYOBJECT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityObject.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="EntityObject_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityTables.mtt-->
+  <DEFINE_DOCUMENT Name="EntityTables" TableName="VER_ENTITYTABLES" TempTable="GT_ENTITYTABLES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityTables.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="EntityTables_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/Entity_Rel_Reference.mtt-->
+  <DEFINE_DOCUMENT Name="Entity_Rel_Reference" TableName="VER_ENTITY_REL_REFERENCE" TempTable="GT_ENTITY_REL_REFERENCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/Entity_Rel_Reference.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Entity_Rel_Refe_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/ErrorMaster.mtt-->
+  <DEFINE_DOCUMENT Name="ErrorMaster" TableName="VER_ERRORMASTER" TempTable="GT_ERRORMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/ErrorMaster.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="ErrorMaster_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValInstance.mtt-->
+  <DEFINE_DOCUMENT Name="GroupAttributeValInstance" TableName="VER_GROUPATTRIBUTEVALINSTANCE" TempTable="GT_GROUPATTRIBUTEVALINSTANCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValInstance.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupAttributeV_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValue.mtt-->
+  <DEFINE_DOCUMENT Name="GroupAttributeValue" TableName="VER_GROUPATTRIBUTEVALUE" TempTable="GT_GROUPATTRIBUTEVALUE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValue.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupAttributeV_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupClass.mtt-->
+  <DEFINE_DOCUMENT Name="GroupClass" TableName="VER_GROUPCLASS" TempTable="GT_GROUPCLASS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupClass.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupClass_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupExecutionLog.mtt-->
+  <DEFINE_DOCUMENT Name="GroupExecutionLog" TableName="VER_GROUPEXECUTIONLOG" TempTable="GT_GROUPEXECUTIONLOG" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupExecutionLog.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupExecutionL_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupMaster.mtt-->
+  <DEFINE_DOCUMENT Name="GroupMaster" TableName="VER_GROUPMASTER" TempTable="GT_GROUPMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupMaster.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupMaster_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupMember.mtt-->
+  <DEFINE_DOCUMENT Name="GroupMember" TableName="VER_GROUPMEMBER" TempTable="GT_GROUPMEMBER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Group/GroupMember.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="GroupMember_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Individual/IndividualCustomer.mtt-->
+  <DEFINE_DOCUMENT Name="IndividualCustomer" TableName="VER_INDIVIDUALCUSTOMER" TempTable="GT_INDIVIDUALCUSTOMER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Individual/IndividualCustomer.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="IndividualCusto_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Individual/IndividualName.mtt-->
+  <DEFINE_DOCUMENT Name="IndividualName" TableName="VER_INDIVIDUALNAME" TempTable="GT_INDIVIDUALNAME" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Individual/IndividualName.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="IndividualName_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/SyncUp/LastSyncUp.mtt-->
+  <DEFINE_DOCUMENT Name="LastSyncUp" TableName="VER_LASTSYNCUP" TempTable="GT_LASTSYNCUP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/SyncUp/LastSyncUp.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="LastSyncUp_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/LogErrorData.mtt-->
+  <DEFINE_DOCUMENT Name="LogErrorData" TableName="VER_LOGERRORDATA" TempTable="GT_LOGERRORDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/LogErrorData.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="LogErrorData_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/MultiTable_Map.mtt-->
+  <DEFINE_DOCUMENT Name="MultiTable_Map" TableName="VER_MULTITABLE_MAP" TempTable="GT_MULTITABLE_MAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/MultiTable_Map.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="MultiTable_Map_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetParams.mtt-->
+  <DEFINE_DOCUMENT Name="PSetParams" TableName="VER_PSETPARAMS" TempTable="GT_PSETPARAMS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetParams.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="PSetParams_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValHdr.mtt-->
+  <DEFINE_DOCUMENT Name="PSetValHdr" TableName="VER_PSETVALHDR" TempTable="GT_PSETVALHDR" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValHdr.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="PSetValHdr_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValues.mtt-->
+  <DEFINE_DOCUMENT Name="PSetValues" TableName="VER_PSETVALUES" TempTable="GT_PSETVALUES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValues.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="PSetValues_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryExecutionLog.mtt-->
+  <DEFINE_DOCUMENT Name="QueryExecutionLog" TableName="VER_QUERYEXECUTIONLOG" TempTable="GT_QUERYEXECUTIONLOG" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Query/QueryExecutionLog.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="QueryExecutionL_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryMaster.mtt-->
+  <DEFINE_DOCUMENT Name="QueryMaster" TableName="VER_QUERYMASTER" TempTable="GT_QUERYMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Query/QueryMaster.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="QueryMaster_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryParam.mtt-->
+  <DEFINE_DOCUMENT Name="QueryParam" TableName="VER_QUERYPARAM" TempTable="GT_QUERYPARAM" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Query/QueryParam.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="QueryParam_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Code.mtt-->
+  <DEFINE_DOCUMENT Name="Reference_Code" TableName="VER_REFERENCE_CODE" TempTable="GT_REFERENCE_CODE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Code.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Reference_Code_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Description.mtt-->
+  <DEFINE_DOCUMENT Name="Reference_Description" TableName="VER_REFERENCE_DESCRIPTION" TempTable="GT_REFERENCE_DESCRIPTION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Description.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Reference_Descr_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjKeyDesc.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjKeyDesc" TableName="VER_RELATIONALOBJKEYDESC" TempTable="GT_RELATIONALOBJKEYDESC" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjKeyDesc.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjKe_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjProperties.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjProperties" TableName="VER_RELATIONALOBJPROPERTIES" TempTable="GT_RELATIONALOBJPROPERTIES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjProperties.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjPr_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObject.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObject" TableName="VER_RELATIONALOBJECT" TempTable="GT_RELATIONALOBJECT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObject.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnData.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectColumnData" TableName="VER_RELATIONALOBJECTCOLUMNDATA" TempTable="GT_RELATIONALOBJECTCOLUMNDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnData.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnMap.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectColumnMap" TableName="VER_RELATIONALOBJECTCOLUMNMAP" TempTable="GT_RELATIONALOBJECTCOLUMNMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnMap.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectData.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectData" TableName="VER_RELATIONALOBJECTDATA" TempTable="GT_RELATIONALOBJECTDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectData.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectFilter.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectFilter" TableName="VER_RELATIONALOBJECTFILTER" TempTable="GT_RELATIONALOBJECTFILTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectFilter.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectKeyType.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectKeyType" TableName="VER_RELATIONALOBJECTKEYTYPE" TempTable="GT_RELATIONALOBJECTKEYTYPE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectKeyType.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectMap.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectMap" TableName="VER_RELATIONALOBJECTMAP" TempTable="GT_RELATIONALOBJECTMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectMap.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="RelationalObjec_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Standard_Map.mtt-->
+  <DEFINE_DOCUMENT Name="Standard_Map" TableName="VER_STANDARD_MAP" TempTable="GT_STANDARD_MAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Standard_Map.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Standard_Map_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/SystemProperties.mtt-->
+  <DEFINE_DOCUMENT Name="SystemProperties" TableName="VER_SYSTEMPROPERTIES" TempTable="GT_SYSTEMPROPERTIES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/System/SystemProperties.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="SystemPropertie_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/TelephoneNumber.mtt-->
+  <DEFINE_DOCUMENT Name="TelephoneNumber" TableName="VER_TELEPHONENUMBER" TempTable="GT_TELEPHONENUMBER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::Unilever/models/Customer/TelephoneNumber.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="TelephoneNumber_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Valid_Language.mtt-->
+  <DEFINE_DOCUMENT Name="Valid_Language" TableName="VER_VALID_LANGUAGE" TempTable="GT_VALID_LANGUAGE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/LRDM/Valid_Language.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Valid_Language_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/VersionDetails.mtt-->
+  <DEFINE_DOCUMENT Name="VersionDetails" TableName="VER_VERSIONDETAILS" TempTable="GT_VERSIONDETAILS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/System/VersionDetails.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="VersionDetails_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/VersionInfo.mtt-->
+  <DEFINE_DOCUMENT Name="VersionInfo" TableName="VER_VERSIONINFO" TempTable="GT_VERSIONINFO" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/System/VersionInfo.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="VersionInfo_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Next_Nodes.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Next_Nodes" TableName="VER_WF_NEXT_NODES" TempTable="GT_WF_NEXT_NODES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Next_Nodes.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Next_Nodes_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Next_Nodes_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Next_Nodes_Audit" TableName="VER_WF_NEXT_NODES_AUDIT" TempTable="GT_WF_NEXT_NODES_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Next_Nodes_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Next_Nodes_A_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params" TableName="VER_WF_PARAMS" TempTable="GT_WF_PARAMS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Params_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Audit" TableName="VER_WF_PARAMS_AUDIT" TempTable="GT_WF_PARAMS_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Params_Audit_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params_Ext.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Ext" TableName="VER_WF_PARAMS_EXT" TempTable="GT_WF_PARAMS_EXT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params_Ext.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Params_Ext_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Ext_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Ext_Audit" TableName="VER_WF_PARAMS_EXT_AUDIT" TempTable="GT_WF_PARAMS_EXT_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Ext_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Params_Ext_A_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process" TableName="VER_WF_PROCESS" TempTable="GT_WF_PROCESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Audit" TableName="VER_WF_PROCESS_AUDIT" TempTable="GT_WF_PROCESS_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Audi_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Instance.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Instance" TableName="VER_WF_PROCESS_INSTANCE" TempTable="GT_WF_PROCESS_INSTANCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Instance.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Inst_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Nodes.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Nodes" TableName="VER_WF_PROCESS_NODES" TempTable="GT_WF_PROCESS_NODES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Nodes.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Node_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Nodes_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Nodes_Audit" TableName="VER_WF_PROCESS_NODES_AUDIT" TempTable="GT_WF_PROCESS_NODES_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Nodes_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Node_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Status.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Status" TableName="VER_WF_PROCESS_STATUS" TempTable="GT_WF_PROCESS_STATUS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Status.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Stat_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Tasks.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Tasks" TableName="VER_WF_PROCESS_TASKS" TempTable="GT_WF_PROCESS_TASKS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Tasks.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Process_Task_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Task_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Task_Audit" TableName="VER_WF_TASK_AUDIT" TempTable="GT_WF_TASK_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Task_Audit.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Task_Audit_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Workflows.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Workflows" TableName="VER_WF_WORKFLOWS" TempTable="GT_WF_WORKFLOWS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--prepend Version ID-->
+    <PROPERTY Name="verId" ColumnName="SYS_VER_ID" Type="int" Required="true" />
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Workflows.mtt-->
+    <PRIMARY_INDEX>
+      <PARTITION_BY>
+        <PROPERTY Name="verId" />
+      </PARTITION_BY>
+    </PRIMARY_INDEX>
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <!--append VersionInfo DocLink-->
+    <DOCUMENTLINK Name="Wf_Workflows_VersionInfo_FK" LinkedDocument="//BCM_MASTER/VersionInfo">
+      <MAP_PROPERTY From="verId" To="versionId" />
+    </DOCUMENTLINK>
+  </DEFINE_DOCUMENT>
+</DOCUMENTS>
+

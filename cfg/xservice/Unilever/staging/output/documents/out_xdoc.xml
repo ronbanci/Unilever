@@ -1,0 +1,1946 @@
+<DOCUMENTS>
+  <!--[Unilever]::Unilever/models/Customer/Address.mtt-->
+  <DEFINE_DOCUMENT Name="Address" TableName="OUT_ADDRESS" TempTable="GT_ADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Customer/Address.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/AttributeSet.mtt-->
+  <DEFINE_DOCUMENT Name="AttributeSet" TableName="OUT_ATTRIBUTESET" TempTable="GT_ATTRIBUTESET" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/AttributeSet.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/AttributeSetDetail.mtt-->
+  <DEFINE_DOCUMENT Name="AttributeSetDetail" TableName="OUT_ATTRIBUTESETDETAIL" TempTable="GT_ATTRIBUTESETDETAIL" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/AttributeSetDetail.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/ClassificationErrorMap.mtt-->
+  <DEFINE_DOCUMENT Name="ClassificationErrorMap" TableName="OUT_CLASSIFICATIONERRORMAP" TempTable="GT_CLASSIFICATIONERRORMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/ClassificationErrorMap.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set.mtt-->
+  <DEFINE_DOCUMENT Name="Code_Set" TableName="OUT_CODE_SET" TempTable="GT_CODE_SET" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set_Stats.mtt-->
+  <DEFINE_DOCUMENT Name="Code_Set_Stats" TableName="OUT_CODE_SET_STATS" TempTable="GT_CODE_SET_STATS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Code_Set_Stats.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/CrossRefRelation.mtt-->
+  <DEFINE_DOCUMENT Name="CrossRefRelation" TableName="OUT_CROSSREFRELATION" TempTable="GT_CROSSREFRELATION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/CrossRefRelation.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/CrossReference.mtt-->
+  <DEFINE_DOCUMENT Name="CrossReference" TableName="OUT_CROSSREFERENCE" TempTable="GT_CROSSREFERENCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/CrossReference.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Custom_Code_Set_Clm.mtt-->
+  <DEFINE_DOCUMENT Name="Custom_Code_Set_Clm" TableName="OUT_CUSTOM_CODE_SET_CLM" TempTable="GT_CUSTOM_CODE_SET_CLM" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Custom_Code_Set_Clm.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/Customer.mtt-->
+  <DEFINE_DOCUMENT Name="Customer" TableName="OUT_CUSTOMER" TempTable="GT_CUSTOMER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Customer/Customer.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/CustomerAddress.mtt-->
+  <DEFINE_DOCUMENT Name="CustomerAddress" TableName="OUT_CUSTOMERADDRESS" TempTable="GT_CUSTOMERADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Customer/CustomerAddress.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Domain.mtt-->
+  <DEFINE_DOCUMENT Name="Domain" TableName="OUT_DOMAIN" TempTable="GT_DOMAIN" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Domain.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/ElectronicAddress.mtt-->
+  <DEFINE_DOCUMENT Name="ElectronicAddress" TableName="OUT_ELECTRONICADDRESS" TempTable="GT_ELECTRONICADDRESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Customer/ElectronicAddress.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/EntityClassification.mtt-->
+  <DEFINE_DOCUMENT Name="EntityClassification" TableName="OUT_ENTITYCLASSIFICATION" TempTable="GT_ENTITYCLASSIFICATION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/EntityClassification.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityObject.mtt-->
+  <DEFINE_DOCUMENT Name="EntityObject" TableName="OUT_ENTITYOBJECT" TempTable="GT_ENTITYOBJECT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityObject.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityTables.mtt-->
+  <DEFINE_DOCUMENT Name="EntityTables" TableName="OUT_ENTITYTABLES" TempTable="GT_ENTITYTABLES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/EntityTables.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Entity/Entity_Rel_Reference.mtt-->
+  <DEFINE_DOCUMENT Name="Entity_Rel_Reference" TableName="OUT_ENTITY_REL_REFERENCE" TempTable="GT_ENTITY_REL_REFERENCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Entity/Entity_Rel_Reference.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/ErrorMaster.mtt-->
+  <DEFINE_DOCUMENT Name="ErrorMaster" TableName="OUT_ERRORMASTER" TempTable="GT_ERRORMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/ErrorMaster.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValInstance.mtt-->
+  <DEFINE_DOCUMENT Name="GroupAttributeValInstance" TableName="OUT_GROUPATTRIBUTEVALINSTANCE" TempTable="GT_GROUPATTRIBUTEVALINSTANCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValInstance.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValue.mtt-->
+  <DEFINE_DOCUMENT Name="GroupAttributeValue" TableName="OUT_GROUPATTRIBUTEVALUE" TempTable="GT_GROUPATTRIBUTEVALUE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupAttributeValue.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupClass.mtt-->
+  <DEFINE_DOCUMENT Name="GroupClass" TableName="OUT_GROUPCLASS" TempTable="GT_GROUPCLASS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupClass.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupExecutionLog.mtt-->
+  <DEFINE_DOCUMENT Name="GroupExecutionLog" TableName="OUT_GROUPEXECUTIONLOG" TempTable="GT_GROUPEXECUTIONLOG" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupExecutionLog.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupMaster.mtt-->
+  <DEFINE_DOCUMENT Name="GroupMaster" TableName="OUT_GROUPMASTER" TempTable="GT_GROUPMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupMaster.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Group/GroupMember.mtt-->
+  <DEFINE_DOCUMENT Name="GroupMember" TableName="OUT_GROUPMEMBER" TempTable="GT_GROUPMEMBER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Group/GroupMember.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Individual/IndividualCustomer.mtt-->
+  <DEFINE_DOCUMENT Name="IndividualCustomer" TableName="OUT_INDIVIDUALCUSTOMER" TempTable="GT_INDIVIDUALCUSTOMER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Individual/IndividualCustomer.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Individual/IndividualName.mtt-->
+  <DEFINE_DOCUMENT Name="IndividualName" TableName="OUT_INDIVIDUALNAME" TempTable="GT_INDIVIDUALNAME" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Individual/IndividualName.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/SyncUp/LastSyncUp.mtt-->
+  <DEFINE_DOCUMENT Name="LastSyncUp" TableName="OUT_LASTSYNCUP" TempTable="GT_LASTSYNCUP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/SyncUp/LastSyncUp.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Batch Validation/LogErrorData.mtt-->
+  <DEFINE_DOCUMENT Name="LogErrorData" TableName="OUT_LOGERRORDATA" TempTable="GT_LOGERRORDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Batch Validation/LogErrorData.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/MultiTable_Map.mtt-->
+  <DEFINE_DOCUMENT Name="MultiTable_Map" TableName="OUT_MULTITABLE_MAP" TempTable="GT_MULTITABLE_MAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/MultiTable_Map.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetParams.mtt-->
+  <DEFINE_DOCUMENT Name="PSetParams" TableName="OUT_PSETPARAMS" TempTable="GT_PSETPARAMS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetParams.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValHdr.mtt-->
+  <DEFINE_DOCUMENT Name="PSetValHdr" TableName="OUT_PSETVALHDR" TempTable="GT_PSETVALHDR" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValHdr.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValues.mtt-->
+  <DEFINE_DOCUMENT Name="PSetValues" TableName="OUT_PSETVALUES" TempTable="GT_PSETVALUES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/PSET/PSetValues.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryExecutionLog.mtt-->
+  <DEFINE_DOCUMENT Name="QueryExecutionLog" TableName="OUT_QUERYEXECUTIONLOG" TempTable="GT_QUERYEXECUTIONLOG" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Query/QueryExecutionLog.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryMaster.mtt-->
+  <DEFINE_DOCUMENT Name="QueryMaster" TableName="OUT_QUERYMASTER" TempTable="GT_QUERYMASTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Query/QueryMaster.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Query/QueryParam.mtt-->
+  <DEFINE_DOCUMENT Name="QueryParam" TableName="OUT_QUERYPARAM" TempTable="GT_QUERYPARAM" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Query/QueryParam.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Code.mtt-->
+  <DEFINE_DOCUMENT Name="Reference_Code" TableName="OUT_REFERENCE_CODE" TempTable="GT_REFERENCE_CODE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Code.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Description.mtt-->
+  <DEFINE_DOCUMENT Name="Reference_Description" TableName="OUT_REFERENCE_DESCRIPTION" TempTable="GT_REFERENCE_DESCRIPTION" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Reference_Description.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjKeyDesc.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjKeyDesc" TableName="OUT_RELATIONALOBJKEYDESC" TempTable="GT_RELATIONALOBJKEYDESC" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjKeyDesc.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjProperties.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjProperties" TableName="OUT_RELATIONALOBJPROPERTIES" TempTable="GT_RELATIONALOBJPROPERTIES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjProperties.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObject.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObject" TableName="OUT_RELATIONALOBJECT" TempTable="GT_RELATIONALOBJECT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObject.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnData.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectColumnData" TableName="OUT_RELATIONALOBJECTCOLUMNDATA" TempTable="GT_RELATIONALOBJECTCOLUMNDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnData.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnMap.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectColumnMap" TableName="OUT_RELATIONALOBJECTCOLUMNMAP" TempTable="GT_RELATIONALOBJECTCOLUMNMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectColumnMap.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectData.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectData" TableName="OUT_RELATIONALOBJECTDATA" TempTable="GT_RELATIONALOBJECTDATA" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectData.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectFilter.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectFilter" TableName="OUT_RELATIONALOBJECTFILTER" TempTable="GT_RELATIONALOBJECTFILTER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectFilter.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectKeyType.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectKeyType" TableName="OUT_RELATIONALOBJECTKEYTYPE" TempTable="GT_RELATIONALOBJECTKEYTYPE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectKeyType.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectMap.mtt-->
+  <DEFINE_DOCUMENT Name="RelationalObjectMap" TableName="OUT_RELATIONALOBJECTMAP" TempTable="GT_RELATIONALOBJECTMAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/MDRM/RelationalObjectMap.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Standard_Map.mtt-->
+  <DEFINE_DOCUMENT Name="Standard_Map" TableName="OUT_STANDARD_MAP" TempTable="GT_STANDARD_MAP" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Standard_Map.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/SystemProperties.mtt-->
+  <DEFINE_DOCUMENT Name="SystemProperties" TableName="OUT_SYSTEMPROPERTIES" TempTable="GT_SYSTEMPROPERTIES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/System/SystemProperties.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::Unilever/models/Customer/TelephoneNumber.mtt-->
+  <DEFINE_DOCUMENT Name="TelephoneNumber" TableName="OUT_TELEPHONENUMBER" TempTable="GT_TELEPHONENUMBER" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::Unilever/models/Customer/TelephoneNumber.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/LRDM/Valid_Language.mtt-->
+  <DEFINE_DOCUMENT Name="Valid_Language" TableName="OUT_VALID_LANGUAGE" TempTable="GT_VALID_LANGUAGE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/LRDM/Valid_Language.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/VersionDetails.mtt-->
+  <DEFINE_DOCUMENT Name="VersionDetails" TableName="OUT_VERSIONDETAILS" TempTable="GT_VERSIONDETAILS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/System/VersionDetails.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/System/VersionInfo.mtt-->
+  <DEFINE_DOCUMENT Name="VersionInfo" TableName="OUT_VERSIONINFO" TempTable="GT_VERSIONINFO" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/System/VersionInfo.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Next_Nodes.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Next_Nodes" TableName="OUT_WF_NEXT_NODES" TempTable="GT_WF_NEXT_NODES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Next_Nodes.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Next_Nodes_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Next_Nodes_Audit" TableName="OUT_WF_NEXT_NODES_AUDIT" TempTable="GT_WF_NEXT_NODES_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Next_Nodes_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params" TableName="OUT_WF_PARAMS" TempTable="GT_WF_PARAMS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Audit" TableName="OUT_WF_PARAMS_AUDIT" TempTable="GT_WF_PARAMS_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params_Ext.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Ext" TableName="OUT_WF_PARAMS_EXT" TempTable="GT_WF_PARAMS_EXT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Params_Ext.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Ext_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Params_Ext_Audit" TableName="OUT_WF_PARAMS_EXT_AUDIT" TempTable="GT_WF_PARAMS_EXT_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Params_Ext_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process" TableName="OUT_WF_PROCESS" TempTable="GT_WF_PROCESS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Audit" TableName="OUT_WF_PROCESS_AUDIT" TempTable="GT_WF_PROCESS_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Instance.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Instance" TableName="OUT_WF_PROCESS_INSTANCE" TempTable="GT_WF_PROCESS_INSTANCE" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Instance.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Nodes.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Nodes" TableName="OUT_WF_PROCESS_NODES" TempTable="GT_WF_PROCESS_NODES" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Nodes.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Nodes_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Nodes_Audit" TableName="OUT_WF_PROCESS_NODES_AUDIT" TempTable="GT_WF_PROCESS_NODES_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process Audit/Wf_Process_Nodes_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Status.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Status" TableName="OUT_WF_PROCESS_STATUS" TempTable="GT_WF_PROCESS_STATUS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Status.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Tasks.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Process_Tasks" TableName="OUT_WF_PROCESS_TASKS" TempTable="GT_WF_PROCESS_TASKS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Process_Tasks.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Task_Audit.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Task_Audit" TableName="OUT_WF_TASK_AUDIT" TempTable="GT_WF_TASK_AUDIT" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Task_Audit.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+  <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Workflows.mtt-->
+  <DEFINE_DOCUMENT Name="Wf_Workflows" TableName="OUT_WF_WORKFLOWS" TempTable="GT_WF_WORKFLOWS" RLS_ENABLED="false" CLS_ENABLED="false">
+    <!--[Unilever]::models/Toolkit Models/Manage Processes/Workflow Process/Wf_Workflows.mtt-->
+    <!--append additional properties-->
+    <PROPERTY Name="SYS_TARGET_ID" ColumnName="SYS_TARGET_ID" Type="int" />
+    <PROPERTY Name="SYS_AUTH_ID" ColumnName="SYS_AUTH_ID" Type="string(1000)" />
+    <PROPERTY Name="SOURCE" ColumnName="SYS_SOURCE" Type="string(256)" Default="BackEnd" />
+    <PROPERTY Name="CREATED_BY" ColumnName="SYS_CREATED_BY" Type="string(70)" />
+    <PROPERTY Name="CREATION_DATE" ColumnName="SYS_CREATION_DATE" Type="datetime" />
+    <PROPERTY Name="ENTITY_STATE" ColumnName="SYS_ENT_STATE" Type="string(25)">
+      <VALID_VALUES>
+        <OPTION Value="ACTIVE" />
+        <OPTION Value="INACTIVE" />
+        <OPTION Value="NEW" />
+        <OPTION Value="DELETED" />
+      </VALID_VALUES>
+    </PROPERTY>
+    <PROPERTY Name="LAST_MODIFIED_BY" ColumnName="SYS_LAST_MODIFIED_BY" Type="string(70)" />
+    <PROPERTY Name="LAST_MODIFIED_DATE" ColumnName="SYS_LAST_MODIFIED_DATE" Type="datetime" />
+    <PROPERTY Name="SYS_TYPE" ColumnName="SYS_NC_TYPE" Type="string(25)" />
+    <PROPERTY Name="SYS_ERR_CODE" ColumnName="SYS_ERR_CODE" Type="string(10000)" />
+    <PROPERTY Name="SYS_ERR_SEVERITY" ColumnName="SYS_ERR_SVRTY" Type="string(30)">
+      <VALID_VALUES>
+        <OPTION Value="SEVERE_ERROR" />
+        <OPTION Value="ERROR" />
+        <OPTION Value="WARNING" />
+      </VALID_VALUES>
+    </PROPERTY>
+  </DEFINE_DOCUMENT>
+</DOCUMENTS>
+

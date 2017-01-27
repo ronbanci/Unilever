@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dom-config>
+  <service-config Name="BCM_MASTER">
+    <logger>
+      <file Name="bcm_master.log"/>
+    </logger>
+    <service-params>
+      <param Name="DEFAULT_MAX_ROWS_FETCH" Value="1000"/>
+    </service-params>
+  </service-config>
+  <!--
+ 	 Copyright (c) 2009 by Teradata Corporation. 
+	 All Rights Reserved. 
+	 Teradata CONFIDENTIAL AND TRADE SECRET 
+ -->
+</dom-config>

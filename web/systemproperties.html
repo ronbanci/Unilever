@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<title>Teradata MDM REST Service Example Using JQuery</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(function()
+	{
+	  var url = "http://localhost:8080/mdm/xcorexml/services/BCM_MASTER/tables/SystemProperties"
+	  $.ajax({
+	      type: "GET",
+	      url: url,
+	      headers: {
+	          'Accept' : "text/xml",
+	          'response' : "application/xml",
+	          'Authorization': "Basic YWRtaW46YWRtaW4="
+
+	      },
+	   }).done(function (data)
+	   {
+	      $("#message").text("RESULTS: SUCCESS");
+	      $("#result").append(JSON.stringify(data, null, 2));
+	   }).fail (function (error)
+	   {
+	      $("#message").text("RESULTS: ERROR, HTTP Code: " + error.status);
+	      $("#result").append(JSON.stringify(error.responseJSON, null, 2));
+	   })
+	   $("#query").text("Executing query: " + url);
+	})
+	</script>
+	</head>
+	<body>
+	<div>
+	  <span id="query"></span>
+	</div>
+	<div>
+	  <span id="message"></span>
+	  <pre id="result"></pre>
+	</div>
+	</body>
+</html>

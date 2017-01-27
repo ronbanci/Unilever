@@ -1,0 +1,7 @@
+<REQUESTS ServiceName="DATAUPLOAD">
+  <REQUEST Name="dummyRequest" />
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="DataUploadCompleteTemplate" DisplayName="Data Upload Complete" TemplateType="DataUploadComplete" DataType="XML" ServiceName="E2E" ApiName="raiseDataUploadCompleted" UserData="" />
+  </REQUEST>
+</REQUESTS>
+

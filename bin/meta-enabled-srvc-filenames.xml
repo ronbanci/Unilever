@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<META_ENABLED_SERVICE_FILE_NAMES>
+  <SERVICE_FILE Value="Unilever.xml"/>
+  <SERVICE_FILE Value="Unilever-input.xml"/>
+  <SERVICE_FILE Value="Unilever-output.xml"/>
+  <SERVICE_FILE Value="Unilever-netchange.xml"/>
+  <SERVICE_FILE Value="Unilever-version.xml"/>
+</META_ENABLED_SERVICE_FILE_NAMES>

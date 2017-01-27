@@ -1,0 +1,540 @@
+<REQUESTS ServiceName="DATAUPLOAD">
+  <REQUEST Name="dummyRequest" />
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityAddressTemplate" UserData="excelUpload" DisplayName="Address" TemplateType="Transaction.EntityAddressTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Address">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityAttributeSetTemplate" UserData="excelUpload" DisplayName="AttributeSet" TemplateType="Transaction.EntityAttributeSetTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="AttributeSet">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityAttributeSetDetailTemplate" UserData="excelUpload" DisplayName="AttributeSetDetail" TemplateType="Transaction.EntityAttributeSetDetailTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="AttributeSetDetail">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityClassificationErrorMapTemplate" UserData="excelUpload" DisplayName="ClassificationErrorMap" TemplateType="Transaction.EntityClassificationErrorMapTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="ClassificationErrorMap">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCode_SetTemplate" UserData="excelUpload" DisplayName="Code_Set" TemplateType="Transaction.EntityCode_SetTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Code_Set">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCode_Set_StatsTemplate" UserData="excelUpload" DisplayName="Code_Set_Stats" TemplateType="Transaction.EntityCode_Set_StatsTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Code_Set_Stats">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCrossRefRelationTemplate" UserData="excelUpload" DisplayName="CrossRefRelation" TemplateType="Transaction.EntityCrossRefRelationTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="CrossRefRelation">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCrossReferenceTemplate" UserData="excelUpload" DisplayName="CrossReference" TemplateType="Transaction.EntityCrossReferenceTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="CrossReference">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCustom_Code_Set_ClmTemplate" UserData="excelUpload" DisplayName="Custom_Code_Set_Clm" TemplateType="Transaction.EntityCustom_Code_Set_ClmTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Custom_Code_Set_Clm">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCustomerTemplate" UserData="excelUpload" DisplayName="Customer" TemplateType="Transaction.EntityCustomerTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Customer">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityCustomerAddressTemplate" UserData="excelUpload" DisplayName="CustomerAddress" TemplateType="Transaction.EntityCustomerAddressTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="CustomerAddress">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityDomainTemplate" UserData="excelUpload" DisplayName="Domain" TemplateType="Transaction.EntityDomainTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Domain">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityElectronicAddressTemplate" UserData="excelUpload" DisplayName="ElectronicAddress" TemplateType="Transaction.EntityElectronicAddressTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="ElectronicAddress">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityEntityClassificationTemplate" UserData="excelUpload" DisplayName="EntityClassification" TemplateType="Transaction.EntityEntityClassificationTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="EntityClassification">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityEntityObjectTemplate" UserData="excelUpload" DisplayName="EntityObject" TemplateType="Transaction.EntityEntityObjectTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="EntityObject">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityEntityTablesTemplate" UserData="excelUpload" DisplayName="EntityTables" TemplateType="Transaction.EntityEntityTablesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="EntityTables">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityEntity_Rel_ReferenceTemplate" UserData="excelUpload" DisplayName="Entity_Rel_Reference" TemplateType="Transaction.EntityEntity_Rel_ReferenceTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Entity_Rel_Reference">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityErrorMasterTemplate" UserData="excelUpload" DisplayName="ErrorMaster" TemplateType="Transaction.EntityErrorMasterTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="ErrorMaster">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupAttributeValInstanceTemplate" UserData="excelUpload" DisplayName="GroupAttributeValInstance" TemplateType="Transaction.EntityGroupAttributeValInstanceTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupAttributeValInstance">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupAttributeValueTemplate" UserData="excelUpload" DisplayName="GroupAttributeValue" TemplateType="Transaction.EntityGroupAttributeValueTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupAttributeValue">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupClassTemplate" UserData="excelUpload" DisplayName="GroupClass" TemplateType="Transaction.EntityGroupClassTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupClass">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupExecutionLogTemplate" UserData="excelUpload" DisplayName="GroupExecutionLog" TemplateType="Transaction.EntityGroupExecutionLogTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupExecutionLog">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupMasterTemplate" UserData="excelUpload" DisplayName="GroupMaster" TemplateType="Transaction.EntityGroupMasterTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupMaster">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityGroupMemberTemplate" UserData="excelUpload" DisplayName="GroupMember" TemplateType="Transaction.EntityGroupMemberTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="GroupMember">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityIndividualCustomerTemplate" UserData="excelUpload" DisplayName="IndividualCustomer" TemplateType="Transaction.EntityIndividualCustomerTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="IndividualCustomer">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityIndividualNameTemplate" UserData="excelUpload" DisplayName="IndividualName" TemplateType="Transaction.EntityIndividualNameTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="IndividualName">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityLastSyncUpTemplate" UserData="excelUpload" DisplayName="LastSyncUp" TemplateType="Transaction.EntityLastSyncUpTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="LastSyncUp">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityLogErrorDataTemplate" UserData="excelUpload" DisplayName="LogErrorData" TemplateType="Transaction.EntityLogErrorDataTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="LogErrorData">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityMultiTable_MapTemplate" UserData="excelUpload" DisplayName="MultiTable_Map" TemplateType="Transaction.EntityMultiTable_MapTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="MultiTable_Map">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityPSetParamsTemplate" UserData="excelUpload" DisplayName="PSetParams" TemplateType="Transaction.EntityPSetParamsTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="PSetParams">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityPSetValHdrTemplate" UserData="excelUpload" DisplayName="PSetValHdr" TemplateType="Transaction.EntityPSetValHdrTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="PSetValHdr">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityPSetValuesTemplate" UserData="excelUpload" DisplayName="PSetValues" TemplateType="Transaction.EntityPSetValuesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="PSetValues">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityQueryExecutionLogTemplate" UserData="excelUpload" DisplayName="QueryExecutionLog" TemplateType="Transaction.EntityQueryExecutionLogTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="QueryExecutionLog">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityQueryMasterTemplate" UserData="excelUpload" DisplayName="QueryMaster" TemplateType="Transaction.EntityQueryMasterTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="QueryMaster">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityQueryParamTemplate" UserData="excelUpload" DisplayName="QueryParam" TemplateType="Transaction.EntityQueryParamTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="QueryParam">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityReference_CodeTemplate" UserData="excelUpload" DisplayName="Reference_Code" TemplateType="Transaction.EntityReference_CodeTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Reference_Code">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityReference_DescriptionTemplate" UserData="excelUpload" DisplayName="Reference_Description" TemplateType="Transaction.EntityReference_DescriptionTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Reference_Description">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjKeyDescTemplate" UserData="excelUpload" DisplayName="RelationalObjKeyDesc" TemplateType="Transaction.EntityRelationalObjKeyDescTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjKeyDesc">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjPropertiesTemplate" UserData="excelUpload" DisplayName="RelationalObjProperties" TemplateType="Transaction.EntityRelationalObjPropertiesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjProperties">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectTemplate" UserData="excelUpload" DisplayName="RelationalObject" TemplateType="Transaction.EntityRelationalObjectTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObject">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectColumnDataTemplate" UserData="excelUpload" DisplayName="RelationalObjectColumnData" TemplateType="Transaction.EntityRelationalObjectColumnDataTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectColumnData">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectColumnMapTemplate" UserData="excelUpload" DisplayName="RelationalObjectColumnMap" TemplateType="Transaction.EntityRelationalObjectColumnMapTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectColumnMap">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectDataTemplate" UserData="excelUpload" DisplayName="RelationalObjectData" TemplateType="Transaction.EntityRelationalObjectDataTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectData">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectFilterTemplate" UserData="excelUpload" DisplayName="RelationalObjectFilter" TemplateType="Transaction.EntityRelationalObjectFilterTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectFilter">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectKeyTypeTemplate" UserData="excelUpload" DisplayName="RelationalObjectKeyType" TemplateType="Transaction.EntityRelationalObjectKeyTypeTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectKeyType">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityRelationalObjectMapTemplate" UserData="excelUpload" DisplayName="RelationalObjectMap" TemplateType="Transaction.EntityRelationalObjectMapTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="RelationalObjectMap">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityStandard_MapTemplate" UserData="excelUpload" DisplayName="Standard_Map" TemplateType="Transaction.EntityStandard_MapTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Standard_Map">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntitySystemPropertiesTemplate" UserData="excelUpload" DisplayName="SystemProperties" TemplateType="Transaction.EntitySystemPropertiesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="SystemProperties">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityTelephoneNumberTemplate" UserData="excelUpload" DisplayName="TelephoneNumber" TemplateType="Transaction.EntityTelephoneNumberTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="TelephoneNumber">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityValid_LanguageTemplate" UserData="excelUpload" DisplayName="Valid_Language" TemplateType="Transaction.EntityValid_LanguageTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Valid_Language">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityVersionDetailsTemplate" UserData="excelUpload" DisplayName="VersionDetails" TemplateType="Transaction.EntityVersionDetailsTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="VersionDetails">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityVersionInfoTemplate" UserData="excelUpload" DisplayName="VersionInfo" TemplateType="Transaction.EntityVersionInfoTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="VersionInfo">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Next_NodesTemplate" UserData="excelUpload" DisplayName="Wf_Next_Nodes" TemplateType="Transaction.EntityWf_Next_NodesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Next_Nodes">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Next_Nodes_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Next_Nodes_Audit" TemplateType="Transaction.EntityWf_Next_Nodes_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Next_Nodes_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_ParamsTemplate" UserData="excelUpload" DisplayName="Wf_Params" TemplateType="Transaction.EntityWf_ParamsTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Params">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Params_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Params_Audit" TemplateType="Transaction.EntityWf_Params_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Params_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Params_ExtTemplate" UserData="excelUpload" DisplayName="Wf_Params_Ext" TemplateType="Transaction.EntityWf_Params_ExtTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Params_Ext">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Params_Ext_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Params_Ext_Audit" TemplateType="Transaction.EntityWf_Params_Ext_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Params_Ext_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_ProcessTemplate" UserData="excelUpload" DisplayName="Wf_Process" TemplateType="Transaction.EntityWf_ProcessTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Process_Audit" TemplateType="Transaction.EntityWf_Process_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_InstanceTemplate" UserData="excelUpload" DisplayName="Wf_Process_Instance" TemplateType="Transaction.EntityWf_Process_InstanceTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Instance">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_NodesTemplate" UserData="excelUpload" DisplayName="Wf_Process_Nodes" TemplateType="Transaction.EntityWf_Process_NodesTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Nodes">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_Nodes_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Process_Nodes_Audit" TemplateType="Transaction.EntityWf_Process_Nodes_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Nodes_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_StatusTemplate" UserData="excelUpload" DisplayName="Wf_Process_Status" TemplateType="Transaction.EntityWf_Process_StatusTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Status">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Process_TasksTemplate" UserData="excelUpload" DisplayName="Wf_Process_Tasks" TemplateType="Transaction.EntityWf_Process_TasksTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Process_Tasks">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_Task_AuditTemplate" UserData="excelUpload" DisplayName="Wf_Task_Audit" TemplateType="Transaction.EntityWf_Task_AuditTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Task_Audit">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+  <REQUEST Name="addTemplate">
+    <TEMPLATE Name="EntityWf_WorkflowsTemplate" UserData="excelUpload" DisplayName="Wf_Workflows" TemplateType="Transaction.EntityWf_WorkflowsTemplate" DataType="xls" ServiceName="E2E" ApiName="persistDBDataRequest" MiscData="Wf_Workflows">
+      <PROPERTY Name="SYS_TARGET_ID" />
+      <PROPERTY Name="SYS_AUTH_ID" />
+      <PROPERTY Name="SOURCE" />
+      <PROPERTY Name="SYS_TYPE" />
+    </TEMPLATE>
+  </REQUEST>
+</REQUESTS>
+

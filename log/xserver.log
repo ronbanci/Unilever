@@ -1,0 +1,64 @@
+<html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+  <tr> <td> Unknown</td> <td> </td> <td> 01/26/2017 11:45:44:148</td> <td> main</td> <td> Exception</td> 
+    <td>
+Exiting the application
+File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+    </td>
+    <td>com.teradata.xcore.util.XcoreException: File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+	at com.teradata.xcore.util.XcoreSaxBase.parseFiles(XcoreSaxBase.java:171)
+	at com.teradata.xcore.init.server.handler.DocumentDefnHandler.handleProperty(DocumentDefnHandler.java:46)
+	at com.teradata.xcore.init.core.PropsParser.lookup(PropsParser.java:120)
+	at com.teradata.xcore.init.core.PropsParser.iterate(PropsParser.java:83)
+	at com.teradata.xcore.init.core.PropsParser.parseXML(PropsParser.java:65)
+	at com.teradata.xcore.init.server.handler.ServiceAppHandler.handleProperty(ServiceAppHandler.java:98)
+	at com.teradata.xcore.init.core.PropsParser.lookup(PropsParser.java:120)
+	at com.teradata.xcore.init.core.PropsParser.iterate(PropsParser.java:83)
+	at com.teradata.xcore.init.core.PropsParser.parseXML(PropsParser.java:65)
+	at com.teradata.xcore.init.core.PropsParser.parsePropertyFile(PropsParser.java:54)
+	at com.teradata.xcore.xserver.Xserver.execute(Xserver.java:711)
+	at com.teradata.xcore.xserver.Xserver.main(Xserver.java:668)
+***********************  Xcore Trace *************************
+com.teradata.xcore.util.XcoreException: File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+
+
+    </td><td><br></td>
+  </tr>
+  <tr> <td> Unknown</td> <td> </td> <td> 01/26/2017 11:45:44:149</td> <td> main</td> <td> Exception</td> 
+    <td>
+Exiting the application
+File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+Exiting the application
+Unable to create Service : BCM_MASTER
+failed reading from, toolkit.xml
+    </td>
+    <td>com.teradata.xcore.util.XcoreException: File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+	at com.teradata.xcore.util.XcoreSaxBase.parseFiles(XcoreSaxBase.java:171)
+	at com.teradata.xcore.init.server.handler.DocumentDefnHandler.handleProperty(DocumentDefnHandler.java:46)
+	at com.teradata.xcore.init.core.PropsParser.lookup(PropsParser.java:120)
+	at com.teradata.xcore.init.core.PropsParser.iterate(PropsParser.java:83)
+	at com.teradata.xcore.init.core.PropsParser.parseXML(PropsParser.java:65)
+	at com.teradata.xcore.init.server.handler.ServiceAppHandler.handleProperty(ServiceAppHandler.java:98)
+	at com.teradata.xcore.init.core.PropsParser.lookup(PropsParser.java:120)
+	at com.teradata.xcore.init.core.PropsParser.iterate(PropsParser.java:83)
+	at com.teradata.xcore.init.core.PropsParser.parseXML(PropsParser.java:65)
+	at com.teradata.xcore.init.core.PropsParser.parsePropertyFile(PropsParser.java:54)
+	at com.teradata.xcore.xserver.Xserver.execute(Xserver.java:711)
+	at com.teradata.xcore.xserver.Xserver.main(Xserver.java:668)
+***********************  Xcore Trace *************************
+com.teradata.xcore.util.XcoreException: File Not found: xservice/toolkit/rules/CDINextGenRules.xml
+
+***********************  Xcore Trace *************************
+com.teradata.xcore.util.XcoreInitException: Exiting the application
+***********************  Xcore Trace *************************
+com.teradata.xcore.util.XcoreInitException: Unable to create Service : BCM_MASTER
+***********************  Xcore Trace *************************
+com.teradata.xcore.util.XcoreInitException: failed reading from, toolkit.xml
+
+    </td><td><br></td>
+  </tr><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
+</table></body></html><html><head><title>Teradata MDM Log Messages</title> <style type="text/css"><!-- body, table {font-family: arial,sans-serif; font-size: x-small;}th {background: #336699; color: #FFFFFF; text-align: left;}--> </style></head><body bgcolor="#FFFFFF" topmargin="6" leftmargin="6"><hr size="1" noshade><table wrap cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%"><tr><th>Transaction Id</th><th>TD SessionId</th><th>Time</th><th>Thread Name</th><th>Level</th><th>Message</th><th>Stack Trace</th><th>Call Trace-Response</th></tr>
