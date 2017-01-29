@@ -35,6 +35,7 @@
       <logLevels>
         <logLevel Value="Exception"/>
         <logLevel Value="Error"/>
+        <logLevel Value="Debug"/>
       </logLevels>
       <brief-console Value="false"/>
     </logger>
@@ -72,5 +73,7 @@
       <messagingEventDefFiles/>
       <messagingEventFiles/>
     </messaging>
+    <eventDefnFiles/>
+    <publishing-objects/>
   </service-config>
 </dom-config>
